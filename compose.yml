@@ -1,0 +1,9 @@
+services:
+  laravel:
+    image: php:8.3.6-fpm-alpine
+    working_dir: /var/www/html
+    volumes:
+      - ./laravel:/var/www/html
+    ports:
+      - 8000:8000
+    command: php artisan serve --host=0.0.0.0

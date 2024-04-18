@@ -1,0 +1,13 @@
+services:
+  create:
+    image: composer:latest
+    working_dir: /var/www/html
+    volumes:
+      - ./laravel:/var/www/html
+    command: composer create-project laravel/laravel .
+  install:
+    image: composer:latest
+    working_dir: /var/www/html
+    volumes:
+      - ./laravel:/var/www/html
+    command: composer install
