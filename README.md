@@ -2,10 +2,10 @@
 
 ## 初期構築
 
-以下コマンドを実行すると、`app/`ディレクトリが作成され、Laravel アプリケーションが構築されます。
+以下コマンドを実行すると、`laravel`ディレクトリが作成され、Laravel アプリケーションが構築されます。
 
 ```sh
-docker run -w /app -v .:/app --rm composer composer create-project laravel/laravel app
+docker run -w /laravel -v .:/laravel --rm composer composer create-project laravel/laravel laravel
 ```
 
 ## ローカル起動
