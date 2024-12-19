@@ -1,5 +1,5 @@
 services:
-  app:
+  laravel:
     image: php:8.3-apache
     volumes:
       - ./laravel:/var/www/html
